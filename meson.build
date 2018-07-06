@@ -793,7 +793,7 @@ if not libcap.found()
 endif
 
 libmount = dependency('mount',
-                      version : fuzzer_build ? '>= 0' : '>= 2.30')
+                      version : fuzzer_build ? '>= 0' : '>= 2.27')
 
 want_seccomp = get_option('seccomp')
 if want_seccomp != 'false' and not fuzzer_build
